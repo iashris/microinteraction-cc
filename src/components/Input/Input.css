@@ -1,0 +1,25 @@
+.input {
+    margin-bottom: 16px;
+}
+
+.input__label {
+    color: #233b58;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.input__main {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #233b58;
+    font-size: 18px;
+    padding: 6px;
+    box-sizing: border-box;
+    outline: 0;
+    transition: 0.2s all ease-in;
+    width: 100%;
+}
+
+.input__main:focus {
+    border: 1px solid #3d9aff;
+}

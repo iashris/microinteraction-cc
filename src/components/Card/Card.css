@@ -1,0 +1,162 @@
+.card {
+    height: 30px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-family: Cousine;
+    align-items: center;
+}
+
+.card__main {
+    width: 350px;
+    height: 220px;
+    position: relative;
+}
+
+.card__side {
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05);
+    backface-visibility: hidden;
+    transition: 0.25s linear all;
+    color: white;
+}
+
+.card__front {
+    padding: 20px;
+    background: linear-gradient( 18deg, rgba(5, 7, 8, 1) 0%, rgba(35, 38, 38, 1) 52%, rgba(5, 4, 4, 1) 100%);
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.card__back {
+    background: #333;
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.imgs>img {
+    height: 50px;
+}
+
+.card__front.flipped {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card__highlighter {
+    position: absolute;
+    z-index: 99;
+    border: 1px solid white;
+    transition: 0.2s ease-in all;
+    border-radius: 6px;
+    padding: 0 2px;
+    opacity: 1;
+}
+
+.invisible {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card__nameviewer {
+    width: 200px;
+    overflow: hidden;
+    min-height: 50px;
+}
+
+.card__section {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card__label {
+    font-size: 10px;
+    font-size: 200;
+    color: #ddd;
+}
+
+.card__numberviewer {
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+.card__back.flipped {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.card__key {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__key.hydrated>.card__key__value {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.card__key.hydrated>.card__key__default {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.card__key__value {
+    opacity: 0;
+    transition: 0.1s linear all;
+}
+
+.card__key__default {
+    opacity: 1;
+    transition: 0.1s linear all;
+}
+
+.card__numberviewer__group {
+    margin-right: 12px;
+}
+
+.card__section {
+    min-height: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.card__magnetic {
+    height: 30px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+
+.card__cvv-zone {
+    padding: 20px;
+    text-align: right;
+}
+
+.card__cvv {
+    display: flex;
+    padding-top: 10px;
+    height: 30px;
+    font-size: 2em;
+    border-radius: 4px;
+    background: white;
+    width: 80%;
+    color: black;
+    float: right;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 4px 0 9px;
+    padding: 4px;
+}
+
+.card__visa {
+    height: 60px;
+}

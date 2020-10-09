@@ -1,0 +1,29 @@
+.select {
+    margin-bottom: 16px;
+    margin-right: 12px;
+    min-width: 150px;
+    flex: 1;
+}
+
+.select__label {
+    color: #233b58;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.select__main {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #233b58;
+    font-size: 18px;
+    padding: 6px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    outline: 0;
+    transition: 0.2s all ease-in;
+    width: 100%;
+}
+
+.select__main:focus {
+    border: 1px solid #3d9aff;
+}
